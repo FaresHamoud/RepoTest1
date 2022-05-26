@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* after */
+      .banana::after{ content: "yummyyellow";color: yellow;}
+      .strawberry::after{content:"Yummy Red"; color: red;}
+
+
+
+
+
+      /* backdrop */
+      .video::backdrop {
+          background: red;
+      }
+
+
+
+      /* :before */
+
+      .beforepseudoelent::before {
+          content: "🆎";
+      }
+
+
+
+      /* firstletter */
+      .firstletter::first-letter {
+          background: blue;
+          font-style: oblique;
+          font-weight: 400;color: aliceblue;
+          font-size:xx-large
+      }
+
+
+      /* ::first-line */
+
+      .firstline::first-line {
+          color: darkkhaki;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+
+
+      /* ::file-selector-button */
+
+
+      input[type=file]::file-selector-button:hover {
+        background-color: #81ecec;
+        border: 2px solid #ce000a;
+      }uploadafile
+
+
+
+
+      ::grammar-error {
+  text-decoration: underline red;
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>pseaudo elements</h1>
+
+    <!-- (:after) maakt een psaudo element die de laatste "child" van de geslecteerde element is -->
+
+    <p class="banana">this is a banana flavoured text</p>
+    <p>this is a blamd text</p>
+    <p class="strawberry">this is a strawberry flavoured text</p>
+
+    <hr />
+
+    <!-- ::backdrop
+een block die in weergave is als je full-screen view hebt geactiveerd -->
+
+    <!-- 
+cannot make an example of it !! -->
+
+    <!-- ::before 
+    maakt een pseudo element die de eerste "child" is van de geselicteerde element-->
+
+    <p class="beforepseudoelent">
+      this is a sentence, notice what comes before it
+    </p>
+
+    <hr />
+
+    <!-- ::cue -->
+    <!-- met cue kon je bivoorbeeld de style van een vtt track "caption on a video" toepasen -->
+    <!-- cannot make an example of it !!  -->
+
+    <p>CUE::</p>
+
+    <hr />
+
+    <p>::cue-region</p>
+    <!-- het zelfde als cue ?? -->
+
+    <hr />
+
+    <p>::first-letter</p>
+    <!-- style toepassen voor de eerste letter van een block element -->
+
+    <p class="firstletter">
+      Look at the style of the first letter, must be a special letter!
+    </p>
+
+    <hr />
+
+    ::first-line (:first-line)
+
+    <p class="firstline">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae illum
+      quae maiores dicta. Omnis sunt cumque, architecto quidem quam nam, beatae
+      nisi odio deserunt aut laboriosam tempora et deleniti natus. isicing elit.
+      Beatae illum quae maiores dicta. Omnis sunt cumque, architecto quidem quam
+      nam, beatae nisi odio deserunt aut laboriosam tempora et deleniti nat
+    </p>
+
+    <hr />
+
+    ::file-selector-button
+
+    <!-- pseudo element van een input knop waarvan de type "file is" -->
+
+    <form>
+      <label for="uploadafile">click to Upload file</label>
+      <input type="file" id="uploadafile" />
+    </form>
+
+<hr>
+
+
+::grammar-error
+
+<!-- /* de style van een text die niet grammaticaal juist is */ -->
+
+<p>this are a grammatically incorret phrasess </p>
+
+<!-- cannot make example work! -->
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+  </body>
+
+</html>
