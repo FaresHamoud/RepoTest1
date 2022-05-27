@@ -69,7 +69,32 @@ ul li::marker { color: #ce000a;}
 
 
 
+/* :placeholder */
+input::placeholder {
+  color: rgba(6, 49, 158, 0.826);
+  font-style: italic;
+  font-weight: 600;
+}
 
+
+
+
+/* ::selection */
+
+
+.selection::selection {background-color: #ce000a;}
+.selection2::selection {background-color: rgb(235, 227, 72);}
+
+
+
+
+
+
+/* ::spelling-error */
+::spelling-error {
+  text-decoration: wavy red;
+  font-style: oblique; 
+}
 
 
 
@@ -88,6 +113,9 @@ ul li::marker { color: #ce000a;}
 
 
     </style>
+
+
+
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -152,7 +180,25 @@ cannot make an example of it !! -->
       nam, beatae nisi odio deserunt aut laboriosam tempora et deleniti nat
     </p>
 
-    <hr />
+
+
+
+
+
+    <hr/>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     ::file-selector-button
 
@@ -163,7 +209,26 @@ cannot make an example of it !! -->
       <input type="file" id="uploadafile" />
     </form>
 
+
+
+
+
+
+
+
+
+
 <hr>
+
+
+
+
+
+
+
+
+
+
 
 
 ::grammar-error
@@ -177,7 +242,18 @@ cannot make an example of it !! -->
 
 
 
+
+
+
 <hr>
+
+
+
+
+
+
+
+
 
 
 ::marker
@@ -192,19 +268,160 @@ cannot make an example of it !! -->
 </ul>
 
 
+
+
+
+
+
+
 <hr>
+
+
+
+
 
 
 
 
 ::part()
 
+<!-- cannot make an example, need to use java script and have prerequisite knowledge about DOM and shadow tree -->
+
+
+
 
 
 
 
 
 <hr>
+
+
+
+
+
+
+
+::placeholder
+
+<!-- voor een placeholder text in een input of textarea element -->
+
+
+<input placeholder="type de tekst hier...">
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+::selection
+
+<!-- dit pseudo element gaat de style toepassen op een gedeelte van de document die geselicteerd of highlighted door de gebruiker, bijvoorbeeld klik of drag op en tekst -->
+
+<h1 class="selection"> select me </h1>
+<p class="selection2">select me too, see my color</p>
+
+
+
+
+
+<hr>
+
+
+
+
+::slotted()
+
+<!-- voor een text geplaast binnen een slot op een html document -->
+
+<!-- cannot make an example, i do not know js yet! -->
+
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+::spelling-error
+
+
+<!-- style voor een verkeerd gespeld gemarkeerd bij de user agent (browswer bijvoorbeeld) -->
+
+
+
+
+
+<p contenteditable spellcheck="true">i am writing smthinng wrrrng here, it's incorrrrct</p>
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+
+::target-text
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+<!-- target-text pseudo element is bedoeld voor een text waar heb je gescrolled ertoe, dan kun je style van highlited text zien -->
+ 
+
+<!-- het is experimental technology en niet beschikbaar voor alle browsers -->
+
+
+
+
+
+
+
+
+
 
 
 

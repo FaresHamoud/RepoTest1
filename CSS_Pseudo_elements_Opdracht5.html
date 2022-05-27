@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+    <style>
+#shape {
+  width: 200px;
+  height: 200px;
+  background: rgb(255, 0, 0);
+  margin: 50px auto;
+  position: relative;
+  }
+
+
+#shape:before {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: rgb(255, 0, 0);
+  position: absolute;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  }
+
+  #shape:after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: rgb(255, 0, 0);
+  position: absolute;
+  transform: rotate(65deg);
+  -webkit-transform: rotate(65deg);
+  }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="shape"></div>
+
+</body>
+</html>
