@@ -20,7 +20,10 @@
         background-color: lightblue;
         padding: 25px;
         display: grid;
-        grid-template-columns: 4fr 2fr;
+        grid-template-columns: 1fr 2fr;
+        grid-auto-columns: 200px;
+        grid-auto-rows: 100px
+          
       }
 
       section div {
@@ -37,31 +40,19 @@
       }
 
       .sidebar {
-        display: grid;
-        grid-row: 1/3;
+
+      }
+
+      #article_1 {
       }
 
       .article {
         background-color: white;
-        height: 200px;
-        width: 600px;
       }
 
-
-      #article_1{
-        grid-column-start: 2;
-        grid-column-end: 5;
-        
+      #article_3 {
+        grid-row-start: 5
       }
-
-#article_2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-}
-
-
-
-
     </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -74,6 +65,7 @@
       <div class="sidebar"><p>Sidebar</p></div>
       <div class="article" id="article_1"><p>Article</p></div>
       <div class="article" id="article_2"><p>Article</p></div>
+      <div class="article" id="article_3"><p>Article</p></div>
     </section>
   </body>
 </html>

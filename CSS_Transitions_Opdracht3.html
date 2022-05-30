@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+    <style>
+
+.container{
+
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    background: rgb(246, 246, 241);
+    margin: 9px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+        .box {
+            border-color: black;
+            border: solid;
+            padding: 10px;
+            background: rgb(238, 238, 233);
+            width: 20px;
+            height: 20px;
+            position: relative;
+            margin: 2px;
+         }
+
+         #box4 {
+             background: white;
+         }
+
+
+.container:hover #box1 {
+transform: translatex(800%);
+background: red;
+border-radius: 50%;
+}
+
+.container:hover #box2 {
+transform: translatex(800%);
+background: red;
+border-radius: 20%;
+}
+
+.container:hover #box3 {
+transform: translatex(800%);
+background: red;
+}
+.container:hover #box4 {
+transform: translatex(800%);
+background: red;
+}
+.container:hover #box5 {
+transform: translatex(800%);
+background: red;
+
+}
+
+
+
+
+#box1 {
+    transition: all 2s ease-in;
+}
+
+
+#box2 {
+    transition: all 3s cubic-bezier(0.5, 0, 0.75, 0);
+}
+
+#box3 {
+    transition: all 2.2s cubic-bezier(0.5, 0, 0.75, 0);
+}
+
+#box4 {
+    transition: all 2.5s cubic-bezier(0.5, 0, 0.75, 0) 0.5s;
+}
+
+#box5 {
+    transition: all 3s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+
+
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+<div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    <div class="box" id="box5">5</div>
+
+</div>
+
+</body>
+</html>

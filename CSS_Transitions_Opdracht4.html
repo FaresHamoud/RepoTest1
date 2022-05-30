@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+    <style>
+
+.container{
+
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    background: rgb(246, 246, 241);
+    margin: 9px;
+    padding: 5px;
+}
+
+        .box {
+            border-color: black;
+            border: solid;
+            padding: 10px;
+            background: rgb(238, 238, 233);
+            width: 20px;
+            height: 20px;
+            position: relative;
+            margin: 2px;
+         }
+
+         /* #box4 {
+             background: white;
+         } */
+
+
+.container:hover #box1 {
+/* transform: translatex(10%); */
+animation: box1anim 2s ease-in;
+translatey(10%);
+}
+
+
+@keyframes box1anim {
+
+}
+
+
+
+
+
+
+
+#box1 {
+position: relative;
+transition: all 3s cubic-bezier(0.5, 0, 0.75, 0);
+left: 350px
+    /* transition: all 2s ease-in; */
+}
+
+
+#box2 {
+    position: relative;
+    top: -18%;
+    /* transition: all 3s cubic-bezier(0.5, 0, 0.75, 0); */
+}
+
+#box3 {
+    position: relative;
+top: 102px;
+    /* transition: all 2.2s cubic-bezier(0.5, 0, 0.75, 0); */
+}
+
+
+
+
+
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+<div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+
+</div>
+
+</body>
+</html>
