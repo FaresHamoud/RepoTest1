@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .container {
+        background-color: rgb(255, 255, 255);
+        height: 90%;
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      .card {
+        background: rgb(244, 242, 232);
+        border-radius: 12%;
+        box-shadow: 4px 4px 12px 2px;
+        padding: 2rem;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translatex(10%) translatey(5%);
+        z-index: 2;
+      }
+
+      .card:hover ~ .card {
+        transform: translateX(4%);
+      }
+
+      .card:hover h1 {
+        color: rgb(242, 125, 36);
+      }
+
+      .card:hover p {
+        font-size: x-large;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Card</h1>
+        <p>card text card text card text card text</p>
+      </div>
+
+      <div class="card">
+        <h1>Card</h1>
+        <p>card text card text card text card text</p>
+      </div>
+
+      <div class="card">
+        <h1>Card</h1>
+        <p>card text card text card text card text</p>
+      </div>
+
+      <div class="card">
+        <h1>Card</h1>
+        <p>card text card text card text card text</p>
+      </div>
+    </div>
+  </body>
+</html>

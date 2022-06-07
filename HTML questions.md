@@ -8,12 +8,6 @@ TML (HyperText Markup Language) is the most basic building block of the Web. It 
 
 
 Hoe ziet de basis-structuur van HTML eruit?
-HTML Layout: Elements and Coding Example
-By Aryan Gupta
-Last updated on Mar 7, 202212724
-HTML Layout: Elements and Coding Example
-Table of Contents
-What is an HTML Layout?HTML Layout ElementsHTML Layout Coding ExampleConclusion
 An HTML layout is a blueprint used to arrange web pages in a well-defined manner. It is easy to navigate, simple to understand and uses HTML tags to customize web design elements. Crucial for any website, an HTML layout that uses the correct format will easily improve a website’s appearance. Additionally, because HTML layouts are typically responsive by default, they will also be properly formatted for mobile devices. 
 
 What is an HTML Layout?

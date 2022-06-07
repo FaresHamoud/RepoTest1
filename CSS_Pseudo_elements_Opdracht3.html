@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+<style>
+    .container {
+        width: 300px;
+        height: 200px;
+       position: absolute;
+    }
+
+img {
+
+    position: absolute;
+max-width: 300px;
+border: 1px;
+border-style: double;
+padding: 10px;
+}
+
+
+.container > * {
+    z-index: 2;
+}
+.container::before {
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus consequatur aperiam nihil neque, esse laboriosam officiis, vero praesentium quos ipsa dicta suscipit, non dignissimos iuam mollitia ipsam ab expedita Lorem ipsum, dolosum, dolor sit amet consectetur e beatae pariatur fuga unde placeat, dicta qr sit amet consectetur e beatae pariatur fuga unde placeat, dicta quod magni illum ipsa nostrum commodi nihil asperiores, natus ea odit ducimus saepe";
+    position: absolute;
+    max-width: 300px;
+    max-height: 120px;
+    padding: 10px;
+    z-index: 3;
+    font-size: small;
+    color: rgb(255, 255, 255);
+
+}
+
+</style>
+
+
+
 </head>
 <body>
     
+
+
+
+
+    <div class="container">
+        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus consequatur aperiam nihil neque, esse laboriosam officiis, vero praesentium quos ipsa dicta suscipit, non dignissimos iuam mollitia ipsam ab expedita Lorem ipsum, dolor sit amet consectetur adipisas cupiditate eveni sit amet consectetur adipisicing elit. Quas fugiat itaque beatae pariatur fuga unde placeat, dicta quod magni illum ipsa nostrum commodi nihil asperiores, natus ea odit ducimus saepe.</p> -->
+
+
+<img src="https://cesar.com/-/media/barefootpetcare/cesar/articles/socialization/article-doggie-body-language-banner.jpg" alt="">
+
+
+    </div>
+
+
+
+
+
 </body>
 </html>
